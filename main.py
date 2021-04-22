@@ -38,9 +38,10 @@ while True :
       loop.close()
       for i in range(len(list_data)) :
         d = get_data.extract_data_log(list_data[i], real_token[i], api,sushiswap_block)
-        sushiswap_black = d
+        sushiswap_block = d
       time.sleep(60)
-    except :
+    except Exception as e :
+      print(e)
       print('Oops.. something went wrong!')
   
   
