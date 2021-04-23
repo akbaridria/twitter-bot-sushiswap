@@ -43,7 +43,7 @@ while True :
     except Exception as e :
       print(e)
       print('Oops.. something went wrong!')
-    time.sleep(60)
+    time.sleep(300)
   
   
 
